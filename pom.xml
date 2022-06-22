@@ -12,6 +12,7 @@
 
     <modules>
         <module>majortom-cloud-provider-payment</module>
+        <module>majortom-cloud-consumer-order</module>
     </modules>
 
     <!--版本号配置-->
