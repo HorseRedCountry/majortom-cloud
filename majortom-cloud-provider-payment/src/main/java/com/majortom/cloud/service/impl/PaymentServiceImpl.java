@@ -1,7 +1,7 @@
 package com.majortom.cloud.service.impl;
 
 import com.majortom.cloud.dao.PaymentDao;
-import com.majortom.cloud.eneity.Payment;
+import com.majortom.cloud.pojo.eneity.Payment;
 import com.majortom.cloud.service.PaymentService;
 import org.springframework.stereotype.Service;
 

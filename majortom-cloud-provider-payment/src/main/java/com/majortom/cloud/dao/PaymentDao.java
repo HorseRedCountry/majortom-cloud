@@ -1,6 +1,6 @@
 package com.majortom.cloud.dao;
 
-import com.majortom.cloud.eneity.Payment;
+import com.majortom.cloud.pojo.eneity.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

@@ -1,7 +1,7 @@
 package com.majortom.cloud.controller;
 
-import com.majortom.cloud.eneity.CommonResult;
-import com.majortom.cloud.eneity.Payment;
+import com.majortom.cloud.pojo.eneity.CommonResult;
+import com.majortom.cloud.pojo.eneity.Payment;
 import com.majortom.cloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

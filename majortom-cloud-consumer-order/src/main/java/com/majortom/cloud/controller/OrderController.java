@@ -1,7 +1,7 @@
 package com.majortom.cloud.controller;
 
-import com.majortom.cloud.eneity.CommonResult;
-import com.majortom.cloud.eneity.Payment;
+import com.majortom.cloud.pojo.eneity.CommonResult;
+import com.majortom.cloud.pojo.eneity.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -35,8 +35,8 @@ public class OrderController {
     }
 
     @GetMapping(value = "/payment/get/{id}")
-    public CommonResult<Payment> get(@PathVariable Long id) {
-        return restTemplate.getForObject(PAYMENT_URL + "/payment/get" + id, CommonResult.class);
+    public CommonResult<Payment> getPayment(@PathVariable(value = "id") Long id) {
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
     }
 
 }

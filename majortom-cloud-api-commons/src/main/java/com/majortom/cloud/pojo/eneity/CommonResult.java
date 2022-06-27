@@ -1,4 +1,4 @@
-package com.majortom.cloud.eneity;
+package com.majortom.cloud.pojo.eneity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

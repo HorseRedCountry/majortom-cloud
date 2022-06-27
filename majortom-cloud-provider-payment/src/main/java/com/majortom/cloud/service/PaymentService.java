@@ -1,6 +1,6 @@
 package com.majortom.cloud.service;
 
-import com.majortom.cloud.eneity.Payment;
+import com.majortom.cloud.pojo.eneity.Payment;
 
 /**
  * <p>
