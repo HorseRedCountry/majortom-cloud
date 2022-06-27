@@ -14,6 +14,7 @@
         <module>majortom-cloud-provider-payment</module>
         <module>majortom-cloud-consumer-order</module>
         <module>majortom-cloud-api-commons</module>
+        <module>majortom-cloud-eureka-server</module>
     </modules>
 
     <!--版本号配置-->
