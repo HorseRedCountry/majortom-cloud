@@ -24,7 +24,8 @@ import javax.annotation.Resource;
 @RequestMapping(value = "/consummer")
 public class OrderController {
 
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    //public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://MAJORTOM-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;

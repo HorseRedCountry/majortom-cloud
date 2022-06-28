@@ -15,6 +15,8 @@
         <module>majortom-cloud-consumer-order</module>
         <module>majortom-cloud-api-commons</module>
         <module>majortom-cloud-eureka-server</module>
+        <module>majortom-cloud-eureka-server-slaveA</module>
+        <module>majortom-cloud-provider-payment8002</module>
     </modules>
 
     <!--版本号配置-->
