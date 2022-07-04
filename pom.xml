@@ -19,6 +19,9 @@
         <module>majortom-cloud-provider-payment8002</module>
         <module>majortom-cloud-provider-payment8004</module>
         <module>majortom-cloud-consumerzk-order</module>
+        <module>majortom-cloud-providerconsul-payment8006</module>
+        <module>majortom-cloud-consumerconsul-order</module>
+        <module>majortom-cloud-providerconsul-payment8007</module>
     </modules>
 
     <!--版本号配置-->
