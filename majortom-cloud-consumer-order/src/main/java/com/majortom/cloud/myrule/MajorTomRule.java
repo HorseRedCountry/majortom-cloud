@@ -19,7 +19,7 @@ public class MajorTomRule {
 
     @Bean
     public ReactorServiceInstanceLoadBalancer customLoadBalancer(ObjectProvider<ServiceInstanceListSupplier> serviceInstanceListSupplierProvider){
-        return new MajorTomRandomRule(serviceInstanceListSupplierProvider);
+        return new MyLoadBalancerRule(serviceInstanceListSupplierProvider);
     }
 
 }

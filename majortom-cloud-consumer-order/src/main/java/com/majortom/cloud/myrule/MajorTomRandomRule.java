@@ -20,6 +20,7 @@ import org.springframework.core.env.Environment;
 @Configuration
 public class MajorTomRandomRule {
 
+
     @Bean
     public ReactorLoadBalancer<ServiceInstance> randomLoadBalancer(Environment environment,
                                                                    LoadBalancerClientFactory loadBalancerClientFactory) {
