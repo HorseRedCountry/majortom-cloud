@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 /**
  * <p>
@@ -48,6 +49,16 @@ public class PaymentController {
         } else {
             return new CommonResult(444, "查询失败！没有对应记录" + id);
         }
+    }
+
+    @GetMapping(value = "/feign/timeout")
+    public String paymentFeignTimeout(){
+        try {
+            TimeUnit.SECONDS.sleep(30);
+        }catch (InterruptedException e){
+            e.printStackTrace();;
+        }
+        return serverPort;
     }
 
 }
