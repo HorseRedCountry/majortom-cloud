@@ -23,6 +23,8 @@
         <module>majortom-cloud-consumerconsul-order</module>
         <module>majortom-cloud-providerconsul-payment8007</module>
         <module>majortom-cloud-consumer-feign-order80</module>
+        <module>majortom-cloud-provider-hystrix-payment8001</module>
+        <module>majortom-cloud-consumer-feign-hystrix-order80</module>
     </modules>
 
     <!--版本号配置-->

@@ -16,4 +16,5 @@ eureka:
     #false 表示自己端就是注册中心
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:7002/eureka/
+#      defaultZone: http://localhost:7002/eureka/
+      defaultZone: http://localhost:7001/eureka/
