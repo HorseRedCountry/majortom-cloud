@@ -1,6 +1,6 @@
 package com.majortom.cloud.controller;
 
-import com.majortom.cloud.service.PaymentService;
+import com.majortom.cloud.service.HystrixPaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +24,7 @@ import javax.annotation.Resource;
 public class PaymentController {
 
     @Resource
-    private PaymentService paymentService;
+    private HystrixPaymentService paymentService;
 
     @Value("${server.port}")
     private String serverPort;
@@ -41,6 +41,14 @@ public class PaymentController {
     public String paymentInfo_timeout(@PathVariable(value = "id") Integer id, @PathVariable(value = "timeout") int timeout) {
         String result = paymentService.paymentInfo_TIMEOUT(id, timeout);
         log.info("****查询结果：" + result);
+        return result;
+    }
+
+    //服务熔断Demo
+    @GetMapping(value = "/circuit/{id}")
+    public String paymentCircuitBreaker(@PathVariable(value = "id") Integer id) {
+        String result = paymentService.paymentCircuitBreaker(id);
+        log.info("****result:  " + result);
         return result;
     }
 
