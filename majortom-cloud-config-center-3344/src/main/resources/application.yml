@@ -1,0 +1,20 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: majortom-cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:MajorHorse/majortom-cloud-config.git
+          search-paths:
+            - majortom-cloud-config
+      label: master
+
+
+erueka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
