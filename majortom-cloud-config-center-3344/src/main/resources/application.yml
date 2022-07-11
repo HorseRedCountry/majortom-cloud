@@ -8,13 +8,17 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:MajorHorse/majortom-cloud-config.git
+          uri: https://github.com/MajorHorse/majortom-cloud-config.git
           search-paths:
             - majortom-cloud-config
-      label: master
+          username: mylove103@foxmail.com
+          password: maguo103
+      label: main
 
 
-erueka:
+eureka:
   client:
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
       defaultZone: http://localhost:7001/eureka
