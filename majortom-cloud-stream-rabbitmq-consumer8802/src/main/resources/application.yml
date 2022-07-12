@@ -1,0 +1,33 @@
+server:
+  port: 8802
+spring:
+  application:
+    name: majortom-cloud-stream-consumer
+  cloud:
+    stream:
+      binders:                        #此处配置要绑定的服务信息
+        defaultRabbit:                #此表示定义的名称，用于binding整合
+          type: rabbit                #设置消息组件类型
+          environment:                #rabbitmq相关环境配置
+            spring:
+              rabbit:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings:                                   #服务的整合处理
+        input:                                   #这个名字是一个通道的处理
+          destination: studyExchange              #表示要使用的Exchange名称定义
+          content-type: application/json          #设置消息类型
+          binders: defaultRabbit                  #设置要绑定的消息服务的具体配置
+          group: majortom
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 2          #设置心跳的时间间隔
+    lease-expiration-duration-in-seconds: 5       #间隔时间
+    instance-id: send-8002.com                    #消息列表显示的主机名称
+    prefer-ip-address: true                       #访问的路径变为IP地址
