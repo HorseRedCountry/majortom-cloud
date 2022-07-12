@@ -28,6 +28,7 @@
         <module>majortom-cloud-consumer-hystrix-dashboard9001</module>
         <module>majortom-cloud-gatewa9527</module>
         <module>majortom-cloud-config-center-3344</module>
+        <module>majortom-cloud-config-client-3355</module>
     </modules>
 
     <!--版本号配置-->
