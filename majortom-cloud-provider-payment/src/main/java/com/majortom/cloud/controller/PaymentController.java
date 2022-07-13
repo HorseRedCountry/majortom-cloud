@@ -34,7 +34,7 @@ public class PaymentController {
         int result = paymentService.create(payment);
         log.info("*****插入结果：" + result);
         if (result > 0) {
-            return new CommonResult(200, "插入成功！serverPort:"+serverPort, result);
+            return new CommonResult(200, "插入成功！serverPort:" + serverPort, result);
         } else {
             return new CommonResult(444, "插入失败！");
         }
@@ -45,20 +45,26 @@ public class PaymentController {
         Payment result = paymentService.getPaymentById(id);
         log.info("****查询结果：" + result);
         if (null != result) {
-            return new CommonResult(200, "查询成功！serverPort:"+serverPort, result);
+            return new CommonResult(200, "查询成功！serverPort:" + serverPort, result);
         } else {
             return new CommonResult(444, "查询失败！没有对应记录" + id);
         }
     }
 
     @GetMapping(value = "/feign/timeout")
-    public String paymentFeignTimeout(){
+    public String paymentFeignTimeout() {
         try {
             TimeUnit.SECONDS.sleep(30);
-        }catch (InterruptedException e){
-            e.printStackTrace();;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            ;
         }
         return serverPort;
+    }
+
+    @GetMapping(value = "/zipkin")
+    public String paymentZipkin() {
+        return "this is zipkin";
     }
 
 }
