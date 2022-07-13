@@ -35,6 +35,8 @@
         <module>majortom-cloud-stream-rabbitmq-consumer8803</module>
         <module>majortom-cloud-alibaba-provider-payment9001</module>
         <module>majortom-cloud-alibaba-provider-payment9002</module>
+        <module>majortom-cloud-alibaba-consumer-nacos-order83</module>
+        <module>majortom-cloud-alibaba-config-nacos-client3377</module>
     </modules>
 
     <!--版本号配置-->
