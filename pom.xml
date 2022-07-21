@@ -38,6 +38,9 @@
         <module>majortom-cloud-alibaba-consumer-nacos-order83</module>
         <module>majortom-cloud-alibaba-config-nacos-client3377</module>
         <module>majortom-cloud-alibaba-sentinel-service8401</module>
+        <module>majortom-cloud-alibaba-provider-payment9003</module>
+        <module>majortom-cloud-alibaba-provider-payment9004</module>
+        <module>majortom-cloud-alibaba-consumer-order84</module>
     </modules>
 
     <!--版本号配置-->
