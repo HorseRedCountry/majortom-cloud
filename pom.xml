@@ -41,6 +41,7 @@
         <module>majortom-cloud-alibaba-provider-payment9003</module>
         <module>majortom-cloud-alibaba-provider-payment9004</module>
         <module>majortom-cloud-alibaba-consumer-order84</module>
+        <module>majortom-cloud-seata-order-service2001</module>
     </modules>
 
     <!--版本号配置-->
