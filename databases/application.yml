@@ -1,0 +1,53 @@
+server:
+  port: 7091
+
+spring:
+  application:
+    name: seata-server
+
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: ${user.home}/logs/seata
+  # extend:
+  #   logstash-appender:
+  #     destination: 127.0.0.1:4560
+  #   kafka-appender:
+  #     bootstrap-servers: 127.0.0.1:9092
+  #     topic: logback_to_logstash
+
+console:
+  user:
+    username: seata
+    password: seata
+
+seata:
+  config:
+    # support: nacos, consul, apollo, zk, etcd3
+    type: nacos
+    nacos:
+      server-addr: 82.157.65.202:8848
+      namespace: a6fcef0a-9dd2-4f9a-a109-f63a8ec54e80
+      group: majortom-cloud
+      username: nacos
+      password: maguo103
+      data-id: seata-server.properties
+  registry:
+    # support: nacos, eureka, redis, zk, consul, etcd3, sofa
+    type: nacos
+    nacos:
+      server-addr: 82.157.65.202:8848
+      namespace: a6fcef0a-9dd2-4f9a-a109-f63a8ec54e80
+      group: majortom-cloud
+      username: nacos
+      password: maguo103
+  # store:
+  #   # support: file 、 db 、 redis
+  #   mode: file
+#  server:
+#    service-port: 8091 #If not configured, the default is '${server.port} + 1000'
+  security:
+    secretKey: SeataSecretKey0c382ef121d778043159209298fd40bf3850a017
+    tokenValidityInMilliseconds: 1800000
+    ignore:
+      urls: /,/**/*.css,/**/*.js,/**/*.html,/**/*.map,/**/*.svg,/**/*.png,/**/*.ico,/console-fe/public/**,/api/v1/auth/login
