@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 /**
  * <p>
  *
@@ -21,14 +19,12 @@ public class Storage {
 
     private Long id;
 
-    private Long userId;
-
     private Long productId;
 
-    private Integer count;
+    private Integer total;
 
-    private BigDecimal money;
+    private Integer used;
 
-    private Integer status;
+    private Integer residue;
 
 }

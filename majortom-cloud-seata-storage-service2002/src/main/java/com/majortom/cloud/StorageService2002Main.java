@@ -16,8 +16,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class OrderService2001Main {
+public class StorageService2002Main {
     public static void main(String[] args) {
-        SpringApplication.run(OrderService2001Main.class, args);
+        SpringApplication.run(StorageService2002Main.class, args);
     }
 }
