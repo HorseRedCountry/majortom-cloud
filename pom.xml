@@ -43,6 +43,7 @@
         <module>majortom-cloud-alibaba-consumer-order84</module>
         <module>majortom-cloud-seata-order-service2001</module>
         <module>majortom-cloud-seata-storage-service2002</module>
+        <module>majortom-cloud-seata-account-service2003</module>
     </modules>
 
     <!--版本号配置-->
