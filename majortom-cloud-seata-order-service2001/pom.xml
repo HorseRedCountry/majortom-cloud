@@ -60,8 +60,16 @@
             <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
             <exclusions>
                 <exclusion>
-                    <groupId>io.seata</groupId>
                     <artifactId>seata-all</artifactId>
+                    <groupId>io.seata</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.seata</groupId>
+                    <artifactId>seata-spring-boot-starter</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>spring-boot-starter</artifactId>
+                    <groupId>org.springframework.boot</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
