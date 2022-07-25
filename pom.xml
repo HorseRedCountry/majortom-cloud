@@ -12,15 +12,15 @@
 
     <modules>
         <module>majortom-cloud-provider-payment</module>
-        <module>majortom-cloud-consumer-order</module>
+        <module>majortom-cloud-consumer-storage</module>
         <module>majortom-cloud-api-commons</module>
         <module>majortom-cloud-eureka-server</module>
         <module>majortom-cloud-eureka-server-slaveA</module>
         <module>majortom-cloud-provider-payment8002</module>
         <module>majortom-cloud-provider-payment8004</module>
-        <module>majortom-cloud-consumerzk-order</module>
+        <module>majortom-cloud-consumerzk-storage</module>
         <module>majortom-cloud-providerconsul-payment8006</module>
-        <module>majortom-cloud-consumerconsul-order</module>
+        <module>majortom-cloud-consumerconsul-storage</module>
         <module>majortom-cloud-providerconsul-payment8007</module>
         <module>majortom-cloud-consumer-feign-order80</module>
         <module>majortom-cloud-provider-hystrix-payment8001</module>
@@ -41,7 +41,8 @@
         <module>majortom-cloud-alibaba-provider-payment9003</module>
         <module>majortom-cloud-alibaba-provider-payment9004</module>
         <module>majortom-cloud-alibaba-consumer-order84</module>
-        <module>majortom-cloud-seata-order-service2001</module>
+        <module>majortom-cloud-seata-storage-service2001</module>
+        <module>majortom-cloud-seata-storage-service2002</module>
     </modules>
 
     <!--版本号配置-->

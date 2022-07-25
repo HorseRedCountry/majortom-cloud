@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>majortom-cloud-consumerzk-order</artifactId>
+    <artifactId>majortom-cloud-consumerzk-storage</artifactId>
 
     <dependencies>
         <dependency>

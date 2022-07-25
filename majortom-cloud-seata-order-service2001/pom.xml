@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>majortom-cloud-seata-order-service2001</artifactId>
+    <artifactId>majortom-cloud-seata-storage-service2001</artifactId>
 
     <dependencies>
         <dependency>
