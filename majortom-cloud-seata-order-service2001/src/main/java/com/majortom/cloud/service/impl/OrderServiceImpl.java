@@ -5,6 +5,7 @@ import com.majortom.cloud.domain.Order;
 import com.majortom.cloud.service.AccountSrvice;
 import com.majortom.cloud.service.OrderService;
 import com.majortom.cloud.service.StorageService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +31,7 @@ public class OrderServiceImpl implements OrderService {
     private AccountSrvice accountSrvice;
 
     @Override
+    @GlobalTransactional(name = "mt-create-order",rollbackFor = Exception.class)
     public void create(Order order) {
         log.info("--------开始新建订单--------");
         orderDao.create(order);

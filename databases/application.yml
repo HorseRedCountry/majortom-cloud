@@ -28,7 +28,7 @@ seata:
     nacos:
       server-addr: 82.157.65.202:8848
       namespace: a6fcef0a-9dd2-4f9a-a109-f63a8ec54e80
-      group: majortom-cloud
+      group: DEFAULT_GROUP
       username: nacos
       password: maguo103
       data-id: seata-server.properties
@@ -38,7 +38,7 @@ seata:
     nacos:
       server-addr: 82.157.65.202:8848
       namespace: a6fcef0a-9dd2-4f9a-a109-f63a8ec54e80
-      group: majortom-cloud
+      group: DEFAULT_GROUP
       username: nacos
       password: maguo103
   # store:
