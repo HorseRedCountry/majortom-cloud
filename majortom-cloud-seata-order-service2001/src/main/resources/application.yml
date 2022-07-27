@@ -15,9 +15,9 @@ spring:
       discovery:
         server-addr: http://82.157.65.202:8848/
         namespace: a6fcef0a-9dd2-4f9a-a109-f63a8ec54e80
-  config:
-    import:
-      - optional:nacos:seata-client-demo.yml
+#  config:
+#    import:
+#      - optional:nacos:seata-client-demo.yml
 mybatis:
   mapper-locations: classpath:mappers/*.xml
   type-aliases-package: com.majortom.cloud.domain
@@ -31,3 +31,5 @@ feign:
       default:
         read-timeout: 5000
         connect-timeout: 5000
+
+
